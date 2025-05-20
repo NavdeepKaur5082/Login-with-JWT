@@ -39,8 +39,8 @@ const handleErrors = (err) => {
 
 module.exports.register = async (req, res, next) => {
   try {
-    const { email, password } = req.body;
-    const user = await User.create({ email, password });
+    const { name, email, password } = req.body;
+    const user = await User.create({ name, email, password });
     const token = createToken(user._id);
 
     res.cookie("jwt", token, {

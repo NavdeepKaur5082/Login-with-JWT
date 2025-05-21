@@ -15,7 +15,7 @@ app.listen(4000, (err) => {
     }
   });
 
-mongoose.connect("mongodb+srv://navdeepkaur61:computer123@loginapp.u8b1v.mongodb.net/?retryWrites=true&w=majority&appName=LoginApp")
+mongoose.connect("mongodb+srv://username:password@loginapp.u8b1v.mongodb.net/?retryWrites=true&w=majority&appName=LoginApp")
      .then(() => {
         console.log("Connected to MongoDB Atlas");
     })
